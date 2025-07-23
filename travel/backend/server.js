@@ -66,6 +66,15 @@ app.get('/health', (req, res) => {
   });
 });
 
+// API Health check endpoint (for Docker)
+app.get('/api/health', (req, res) => {
+  res.status(200).json({
+    status: 'OK',
+    service: 'vigovia-travel-api',
+    timestamp: new Date().toISOString()
+  });
+});
+
 // API routes
 app.use('/api', itineraryRoutes);
 

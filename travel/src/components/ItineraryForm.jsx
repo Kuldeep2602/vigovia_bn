@@ -750,7 +750,7 @@ const ItineraryForm = () => {
             </div>
 
             <a
-              href={`http://localhost:5000${generatedPDF.data.downloadUrl}`}
+              href={`${import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001'}${generatedPDF.data.downloadUrl}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-3 bg-vigovia-primary text-white font-semibold rounded-lg hover:bg-vigovia-secondary transition-all duration-200 transform hover:scale-105"
