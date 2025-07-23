@@ -6,7 +6,6 @@ const Header = () => {
     <header className="bg-black/20 backdrop-blur-sm text-white shadow-lg">
       <div className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
-          {/* Logo Section */}
           <div className="flex items-center space-x-3">
             <div className="bg-white p-2 rounded-lg">
               <Plane className="h-8 w-8 text-vigovia-primary" />
@@ -17,7 +16,6 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <a 
               href="#" 

@@ -20,7 +20,6 @@ function App() {
         
         <Footer />
         
-        {/* Toast notifications */}
         <Toaster
           position="top-right"
           toastOptions={{
